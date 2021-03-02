@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: white;" stylesheets="/Style/stylesheet.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="900.0" style="-fx-background-color: #66CDAA;" BorderPane.alignment="TOP_RIGHT">
+         <padding>
+            <Insets bottom="5.0" left="6.0" top="5.0" />
+         </padding>
+         <Button mnemonicParsing="false" onAction="#brushAction" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: white;" styleClass="brush" text="Brush" textFill="#015e4e">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+            <font>
+               <Font name="Trebuchet MS Italic" size="12.0" />
+            </font>
+         </Button>
+         <ColorPicker fx:id="colorPicker" style="-fx-background-color: white;">
+            <HBox.margin>
+               <Insets left="7.0" right="7.0" />
+            </HBox.margin>
+            <value>
+               <Color red="0.6314570903778076" green="0.9342105388641357" blue="0.656686544418335" />
+            </value>
+         </ColorPicker>
+         <TextField fx:id="brushSize" prefHeight="44.0" prefWidth="72.0" promptText="Brush size">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font></TextField>
+         <Button alignment="CENTER" mnemonicParsing="false" onAction="#clearAction" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: white;" styleClass="clear" text="Clear" textFill="#015e4e">
+            <HBox.margin>
+               <Insets left="7.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Trebuchet MS Italic" size="12.0" />
+            </font>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#aboutAction" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: white;" styleClass="about" text="About" textFill="#015e4e">
+            <HBox.margin>
+               <Insets left="7.0" right="20.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Trebuchet MS Italic" size="12.0" />
+            </font>
+         </Button>
+      </HBox>
+   </top>
+   <center>
+      <Canvas fx:id="canvas" height="500.0" nodeOrientation="INHERIT" width="900.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
