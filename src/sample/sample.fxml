@@ -10,46 +10,46 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane style="-fx-background-color: white;" stylesheets="/Style/stylesheet.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane styleClass="borderPane" stylesheets="/Style/stylesheet.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <top>
-      <HBox alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="900.0" style="-fx-background-color: #66CDAA;" BorderPane.alignment="TOP_RIGHT">
+      <HBox alignment="TOP_RIGHT" prefHeight="36.0" prefWidth="900.0" styleClass="hbox" BorderPane.alignment="TOP_RIGHT">
          <padding>
             <Insets bottom="5.0" left="6.0" top="5.0" />
          </padding>
-         <Button mnemonicParsing="false" onAction="#brushAction" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: white;" styleClass="brush" text="Brush" textFill="#015e4e">
+         <Button mnemonicParsing="false" onAction="#brushAction" prefHeight="25" prefWidth="48" styleClass="brush" text="Brush" textFill="#015e4e">
             <HBox.margin>
                <Insets />
             </HBox.margin>
             <font>
-               <Font name="Trebuchet MS Italic" size="12.0" />
+               <Font name="Microsoft New Tai Lue" size="12.0" />
             </font>
          </Button>
-         <ColorPicker fx:id="colorPicker" style="-fx-background-color: white;">
+         <ColorPicker fx:id="colorPicker" styleClass="colorPicker">
             <HBox.margin>
                <Insets left="7.0" right="7.0" />
             </HBox.margin>
             <value>
-               <Color red="0.6314570903778076" green="0.9342105388641357" blue="0.656686544418335" />
+               <Color red="0.8947368264198303" green="0.020711500197649002" blue="0.807334303855896" />
             </value>
          </ColorPicker>
-         <TextField fx:id="brushSize" prefHeight="44.0" prefWidth="72.0" promptText="Brush size">
+         <TextField fx:id="brushSize" prefHeight="12.0" prefWidth="70.0" promptText="Brush size" styleClass="brushSize">
             <font>
-               <Font name="System Italic" size="12.0" />
+               <Font name="Microsoft New Tai Lue" size="12.0" />
             </font></TextField>
-         <Button alignment="CENTER" mnemonicParsing="false" onAction="#clearAction" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: white;" styleClass="clear" text="Clear" textFill="#015e4e">
+         <Button alignment="CENTER" mnemonicParsing="false" onAction="#clearAction" prefHeight="25.0" prefWidth="45.0" styleClass="clear" text="Clear" textFill="#015e4e">
             <HBox.margin>
                <Insets left="7.0" />
             </HBox.margin>
             <font>
-               <Font name="Trebuchet MS Italic" size="12.0" />
+               <Font name="Microsoft New Tai Lue" size="12.0" />
             </font>
          </Button>
-         <Button mnemonicParsing="false" onAction="#aboutAction" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: white;" styleClass="about" text="About" textFill="#015e4e">
+         <Button mnemonicParsing="false" onAction="#aboutAction" prefHeight="25.0" prefWidth="51.0" styleClass="about" text="About" textAlignment="JUSTIFY" textFill="#015e4e">
             <HBox.margin>
                <Insets left="7.0" right="20.0" />
             </HBox.margin>
             <font>
-               <Font name="Trebuchet MS Italic" size="12.0" />
+               <Font name="Microsoft New Tai Lue" size="12.0" />
             </font>
          </Button>
       </HBox>
