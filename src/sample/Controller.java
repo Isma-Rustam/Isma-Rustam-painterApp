@@ -7,6 +7,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
+import javafx.scene.control.DialogPane;
 
 public class Controller {
 
@@ -66,6 +67,10 @@ public class Controller {
                 "2.Choose color.\n" +
                 "3.Click on brush button.\n" +
                 "Otherwise you can't draw.\n");
+        
+        DialogPane dialogPane = alert.getDialogPane();
+        dialogPane.getStylesheets().add(getClass().getResource("/Style/stylesheet.css").toExternalForm());
+        dialogPane.getStyleClass().add("myDialog");
         alert.showAndWait();
     }
 }
