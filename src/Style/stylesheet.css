@@ -1,23 +1,90 @@
-.brush:hover {
-    -fx-scale-y: 1.1;
+.borderPane {
+    -fx-background-color: white;
 }
 
-.button:pressed {
+.hbox {
+    -fx-background-color: linear-gradient(to top right, #F0F8FF, white);
+}
+
+.colorPicker {
+    -fx-background-radius: 7px;
+    -fx-background-color: white;
+    -fx-border-color: #E6E6FA;
+    -fx-border-radius: 7px;
+}
+
+.brushSize {
+    -fx-background-radius: 7px;
+    -fx-border-color: #40E0D0;
+    -fx-border-radius: 7px;
+    -fx-background-color: white;
+}
+
+.brush {
+    -fx-background-color: white;
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-text-fill: #3CB371;
+    -fx-border-color: #90EE90;
+}
+
+.brush:hover {
+    -fx-border-color: #2E8B57;
+    -fx-text-fill: #2E8B57;
+}
+
+.brush:pressed {
     -fx-scale-x: 1.1;
 }
 
+.clear {
+    -fx-text-fill: #FFD700;
+    -fx-border-color: #FFD700;
+    -fx-border-radius: 7px;
+    -fx-background-color: white;
+    -fx-background-radius: 7px;
+}
+
 .clear:hover {
-    -fx-scale-y: 1.1;
+    -fx-border-color: #FF8C00;
+    -fx-text-fill: #FF8C00;
 }
 
 .clear:pressed {
     -fx-scale-x: 1.1;
 }
 
+.about {
+    -fx-text-fill: #FF4500;
+    -fx-border-color: #FF4500;
+    -fx-border-radius: 7px;
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
 .about:hover {
-    -fx-scale-y: 1.1;
+    -fx-border-color: #8B0000;
+    -fx-text-fill: #8B0000;
 }
 
 .about:pressed {
     -fx-scale-x: 1.1;
+}
+
+.myDialog {
+    -fx-background-color: snow;
+}
+
+.myDialog .label.content {
+    -fx-font-size: 14px;
+    -fx-font-family: Helvetica, sans-serif;
+}
+
+.myDialog .header-panel {
+    -fx-background-color: #DCDCDC;
+}
+
+.myDialog .header-panel .label {
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
 }
