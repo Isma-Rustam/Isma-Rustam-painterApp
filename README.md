@@ -9,3 +9,5 @@ I created a simple paint app, where you can draw anything.
 Have you done it all? Now you can draw!
 ## Modal window
 ### ![](https://imgur.com/5TAEb01.png)
+## Link to video
+https://drive.google.com/file/d/15NMph_5LlrkqvhXXetBl-S1KPmXu7_Nr/view?usp=sharing
